@@ -12,11 +12,7 @@ https://ethermine.org/miners/5D8ab96C816331416ede77635C4b58e991453e78/dashboard
 
 
 ## eth
-docker build . --tag='eth'
-docker run -d --gpus all --name eth eth
+docker build . --tag='ethminer'
+docker run -d --runtime=nvidia --gpus all --name ethminer ethminer
 
 
-
-
-
-https://stackoverflow.com/questions/49229883/dynamically-decide-which-gpu-to-run-on-tf-on-nvidia-docker
