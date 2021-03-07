@@ -13,6 +13,13 @@ https://ethermine.org/miners/5D8ab96C816331416ede77635C4b58e991453e78/dashboard
 
 ## eth
 docker build . --tag='ethminer'
-docker run -d --runtime=nvidia --gpus all --name ethminer ethminer
+docker run -d --restart=unless-stopped --runtime=nvidia --gpus all --name ethminer ethminer
 
 
+## zil
+
+https://shardpool.io/#start
+https://dev.zilliqa.com/docs/miners/mining-zilminer/#cuda-driver-setup-for-nvidia-gpus-only
+https://github.com/DurianStallSingapore/ZILMiner
+
+./zilminer -P zil://fd6a06a7cc77b03f0a8b4c3532be6041ffabc182754cb154db063e81486ad26c.worker0@eu1-zil.shardpool.io:5000/api --report-hr=1 --work-timeout=99998 --retry-delay=998 --farm-retries=99998
