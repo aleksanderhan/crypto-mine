@@ -1,0 +1,20 @@
+FROM nvidia/cuda:10.2-base-ubuntu18.04
+
+LABEL maintainer="aleksanderhan@gmail.com"
+LABEL version="1.0"
+LABEL description="rvnminer cuda Dockerfile"
+
+WORKDIR = /srv/
+
+RUN apt update && apt upgrade -y
+RUN apt autoremove
+
+
+WORKDIR ~/
+COPY ./run.sh .
+ADD https://github.com/NebuTech/NBMiner/releases/download/v36.1/NBMiner_36.1_Linux.tgz .
+
+RUN tar zxvf NBMiner_36.1_Linux.tgz
+
+CMD ["run.sh"]
+ENTRYPOINT ["/bin/bash"]

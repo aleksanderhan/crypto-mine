@@ -13,13 +13,16 @@ https://ravencoin.flypool.org/miners/RQaiz1xDcfRjhoqRhfc6kRBsLYQsBrCDqS/dashboar
 
 
 ## eth
-docker build . --tag='ethminer'
-docker run -d --restart=unless-stopped --runtime=nvidia --gpus all --name ethminer ethminer
+docker build . --tag='ethminer-cuda'
+docker run -d --restart=unless-stopped --runtime=nvidia --gpus all --name ethminer-cuda ethminer-cuda
 
 
 ## rvn
-docker build ./rvn --tag='rvnminer'
-docker run -d --restart=unless-stopped --device=/dev/dri --name rvnminer rvnminer
+docker build ./rvn --tag='rvnminer-amd'
+docker run -d --restart=unless-stopped --device=/dev/dri --name rvnminer-amd rvnminer-amd
+
+docker build ./rvn --tag='rvnminer-cuda'
+docker run -d --restart=unless-stopped --runtime=nvidia --gpus all --name rvnminer-cuda rvnminer-cuda
 
 
 ## zil
