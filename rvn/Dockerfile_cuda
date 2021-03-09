@@ -16,5 +16,7 @@ ADD https://github.com/NebuTech/NBMiner/releases/download/v36.1/NBMiner_36.1_Lin
 
 RUN tar zxvf NBMiner_36.1_Linux.tgz
 
+ENV GPU_PLATFORM=1
+
 CMD ["run.sh"]
 ENTRYPOINT ["/bin/bash"]
