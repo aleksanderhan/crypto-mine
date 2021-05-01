@@ -11,9 +11,9 @@ RUN apt autoremove
 
 COPY ./run.sh .
 
-ADD https://github.com/no-fee-ethereum-mining/nsfminer/releases/download/v1.3.13/nsfminer_1.3.13-ubuntu_20.04-cuda_11.2-opencl.tar.xz .
+ADD https://github.com/no-fee-ethereum-mining/nsfminer/releases/download/v1.3.13/nsfminer_1.3.13-ubuntu_18.04-cuda_11.2-opencl.tgz .
 RUN mkdir nsfminer
-RUN tar -xvf nsfminer_1.3.13-ubuntu_20.04-cuda_11.2-opencl.tar.xz -C ./nsfminer
+RUN tar xf nsfminer_1.3.13-ubuntu_18.04-cuda_11.2-opencl.tgz -C ./nsfminer
 
 CMD ["run.sh"]
 ENTRYPOINT ["/bin/bash"]
