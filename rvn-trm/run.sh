@@ -1,1 +1,1 @@
-./teamredminer -a kawpow -o stratum-ravencoin.flypool.org:3333  -u RQaiz1xDcfRjhoqRhfc6kRBsLYQsBrCDqS.r9
+./teamredminer-v0.8.2-linux/teamredminer -a kawpow -o stratum-ravencoin.flypool.org:3333  -u RQaiz1xDcfRjhoqRhfc6kRBsLYQsBrCDqS.r9
