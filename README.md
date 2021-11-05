@@ -7,7 +7,7 @@ Docker project for crypto mining
 * https://linuxhint.com/mine-etherium-ethminer-ubuntu/
 
 ## pool dashboard
-* https://ethermine.org/miners/0x1f18440CC37431ed7C7B1E95CCf456889c26EE54/dashboard
+* https://ethermine.org/miners/0x38Ce0D835ec4feEd3698516a40F155B567f8ebB2/dashboard
 * https://ravencoin.flypool.org/miners/RQaiz1xDcfRjhoqRhfc6kRBsLYQsBrCDqS/dashboard
 
 
