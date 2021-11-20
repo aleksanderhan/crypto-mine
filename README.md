@@ -13,7 +13,7 @@ Docker project for crypto mining
 
 ## eth
 * `docker build . --tag='nsfminer-cuda'`
-* `docker run -d --restart=unless-stopped --gpus all --name nsfminer-cuda nsfminer-cuda`
+* `docker run -d --restart=unless-stopped --gpus all --name nsfminer-cuda nsfminer-cuda worker0`
 
 
 ## rvn
