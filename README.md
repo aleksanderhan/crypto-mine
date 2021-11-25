@@ -9,6 +9,7 @@ Docker project for crypto mining
 ## pool dashboard
 * https://ethermine.org/miners/0x38Ce0D835ec4feEd3698516a40F155B567f8ebB2/dashboard
 * https://ravencoin.flypool.org/miners/RQaiz1xDcfRjhoqRhfc6kRBsLYQsBrCDqS/dashboard
+* https://flockpool.com/miners/rtm/RFmnEH4qfyX8qUsFFsSuKwkJPSh1Xg7NeZ
 
 
 ## eth
@@ -22,6 +23,11 @@ Docker project for crypto mining
 
 * `docker build ./rvn --tag='rvnminer-cuda'`
 * `docker run -d --restart=unless-stopped --gpus all --name rvnminer-cuda rvnminer-cuda`
+
+
+## rtm
+* `docker build . --tag='rtm-cpuminer'`
+* `docker run -d --restart=unless-stopped --name rtm-cpuminer rtm-cpuminer`
 
 
 ## zil

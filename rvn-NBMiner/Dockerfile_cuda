@@ -1,9 +1,5 @@
 FROM nvidia/cuda:10.2-base-ubuntu18.04
 
-LABEL maintainer="aleksanderhan@gmail.com"
-LABEL version="1.0"
-LABEL description="rvnminer cuda Dockerfile"
-
 WORKDIR = /srv/
 
 RUN apt update && apt upgrade -y

@@ -1,0 +1,7 @@
+{
+  "url": "stratum+tcps://eu.flockpool.com:5555",
+  "url-backup": "stratum+tcps://us.flockpool.com:5555",
+  "user": "RFmnEH4qfyX8qUsFFsSuKwkJPSh1Xg7NeZ.workstation",
+  "pass": "x",
+  "algo": "gr"
+}
