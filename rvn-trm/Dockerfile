@@ -34,10 +34,10 @@ RUN	./$AMD_DRIVER/amdgpu-install -y --headless --opencl=pal,legacy
 
 
 WORKDIR ~/
-COPY ./run.sh .
-ADD https://github.com/todxx/teamredminer/releases/download/0.8.2/teamredminer-v0.8.2-linux.tgz .
+COPY ./entrypoint.sh .
 
+ADD https://github.com/todxx/teamredminer/releases/download/0.8.2/teamredminer-v0.8.2-linux.tgz .
 RUN tar zxvf teamredminer-v0.8.2-linux.tgz
 
-ENTRYPOINT ["entrypoint.sh"]
+ENTRYPOINT ["./entrypoint.sh"]
 CMD ["worker0"]
