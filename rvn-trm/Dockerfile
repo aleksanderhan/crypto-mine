@@ -39,5 +39,5 @@ ADD https://github.com/todxx/teamredminer/releases/download/0.8.2/teamredminer-v
 
 RUN tar zxvf teamredminer-v0.8.2-linux.tgz
 
-CMD ["run.sh"]
-ENTRYPOINT ["/bin/bash"]
+ENTRYPOINT ["entrypoint.sh"]
+CMD ["worker0"]

@@ -14,20 +14,20 @@ Docker project for crypto mining
 
 ## eth
 * `docker build . --tag='nsfminer-cuda'`
-* `docker run -d --restart=unless-stopped --gpus all --name nsfminer-cuda nsfminer-cuda worker0`
+* `docker run -d --restart=unless-stopped --gpus all --name nsfminer-cuda nsfminer-cuda <worker_name>`
 
 
 ## rvn
-* `docker build ./rvn --tag='rvnminer-amd'`
-* `docker run -d --restart=unless-stopped --device=/dev/dri --name rvnminer-amd rvnminer-amd`
+* `docker build . --tag='rvnminer-trm'`
+* `docker run -d --restart=unless-stopped --device=/dev/dri --name rvnminer-trm rvnminer-trm <worker_name>`
 
-* `docker build ./rvn --tag='rvnminer-cuda'`
+* `docker build . --tag='rvnminer-cuda'`
 * `docker run -d --restart=unless-stopped --gpus all --name rvnminer-cuda rvnminer-cuda`
 
 
 ## rtm
 * `docker build . --tag='rtm-cpuminer'`
-* `docker run -d --restart=unless-stopped --name rtm-cpuminer rtm-cpuminer`
+* `docker run -d --restart=unless-stopped --name rtm-cpuminer rtm-cpuminer <worker_name> <num_threads>`
 
 
 ## zil
