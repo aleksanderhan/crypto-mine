@@ -7,6 +7,6 @@ echo "{
   \"pass\": \"x\",
   \"algo\": \"gr\",
   \"threads\": $2
-}" > config.json
+}" > ./cpuminer-gr-1.2.4.1-x86_64_linux/config.json
 
 ./cpuminer-gr-1.2.4.1-x86_64_linux/cpuminer.sh
