@@ -12,9 +12,14 @@ Docker project for crypto mining
 * https://flockpool.com/miners/rtm/RFmnEH4qfyX8qUsFFsSuKwkJPSh1Xg7NeZ
 
 
-## eth
+## eth-nsfminer
 * `docker build . --tag='nsfminer-cuda'`
 * `docker run -d --restart=unless-stopped --gpus all --name nsfminer-cuda nsfminer-cuda <worker_name>`
+
+
+## eth-NBMiner
+* `docker build . --tag='nbminer-cuda'`
+* `docker run -d --restart=unless-stopped --gpus all --name nbminer-cuda nbminer-cuda <worker_name>`
 
 
 ## rvn
