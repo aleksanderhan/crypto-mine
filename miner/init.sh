@@ -1,6 +1,7 @@
 sudo apt update
 sudo apt upgrade -y 
 sudo apt install -y nvidia-driver-470-server \
+					nvidia-settings \
 					htop
 
 
