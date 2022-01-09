@@ -12,4 +12,4 @@ RUN mkdir nsfminer
 RUN tar xf nsfminer_1.3.13-ubuntu_18.04-cuda_11.2-opencl.tgz -C ./nsfminer
 
 ENTRYPOINT ["/entrypoint.sh"]
-CMD ["worker0"]
+CMD ["default"]

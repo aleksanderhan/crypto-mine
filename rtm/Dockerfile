@@ -11,4 +11,4 @@ RUN tar -xvf cpuminer-gr-1.2.4.1-x86_64_linux.tar.gz
 COPY ./entrypoint.sh .
 
 ENTRYPOINT ["/entrypoint.sh"]
-CMD ["worker0", "0"]
+CMD ["default", "0"]

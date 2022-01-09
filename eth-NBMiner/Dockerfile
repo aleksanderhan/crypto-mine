@@ -11,4 +11,4 @@ ENV GPU_PLATFORM=1
 
 COPY ./entrypoint.sh .
 ENTRYPOINT ["/entrypoint.sh"]
-CMD ["worker0"]
+CMD ["default"]

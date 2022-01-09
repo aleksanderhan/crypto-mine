@@ -40,4 +40,4 @@ ADD https://github.com/todxx/teamredminer/releases/download/0.8.2/teamredminer-v
 RUN tar zxvf teamredminer-v0.8.2-linux.tgz
 
 ENTRYPOINT ["./entrypoint.sh"]
-CMD ["worker0"]
+CMD ["default"]

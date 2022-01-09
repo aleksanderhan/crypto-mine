@@ -30,10 +30,10 @@ RUN	./$AMD_DRIVER/amdgpu-install -y --headless --opencl=pal,legacy
 
 
 WORKDIR ~/
-COPY ./run.sh .
-ADD https://github.com/NebuTech/NBMiner/releases/download/v36.1/NBMiner_36.1_Linux.tgz .
+ADD https://github.com/NebuTech/NBMiner/releases/download/v40.1/NBMiner_40.1_Linux.tgz .
 
-RUN tar zxvf NBMiner_36.1_Linux.tgz
+RUN tar zxvf NBMiner_40.1_Linux.tgz
 
-CMD ["run.sh"]
-ENTRYPOINT ["/bin/bash"]
+COPY ./entrypoint.sh .
+ENTRYPOINT ["/entrypoint.sh"]
+CMD ["default"]
