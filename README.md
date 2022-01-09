@@ -27,7 +27,7 @@ Docker project for crypto mining
 * `docker run -d --restart=unless-stopped --device=/dev/dri --name rvnminer-trm rvnminer-trm <worker_name>`
 
 * `docker build . --tag='rvnminer-cuda'`
-* `docker run -d --restart=unless-stopped --gpus all --name rvnminer-cuda rvnminer-cuda`
+* `docker run -d --restart=unless-stopped --gpus all --name rvnminer-cuda rvnminer-cuda <worker_name>`
 
 
 ## rtm
