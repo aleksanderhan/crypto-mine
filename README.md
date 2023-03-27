@@ -17,9 +17,9 @@ Docker project for crypto mining
 * `docker run -d --restart=unless-stopped --gpus all --name nsfminer-cuda nsfminer-cuda <worker_name>`
 
 
-## eth-NBMiner
+## NBMiner
 * `docker build . --tag='nbminer-cuda'`
-* `docker run -d --restart=unless-stopped --gpus all --name nbminer-cuda nbminer-cuda <worker_name>`
+* `docker run -d --restart=unless-stopped --gpus all --name nbminer-cuda nbminer-cuda <algo> <protocol> <server> <port> <wallet> <worker_name>`
 
 
 ## rvn
@@ -33,16 +33,4 @@ Docker project for crypto mining
 ## rtm
 * `docker build . --tag='rtm-cpuminer'`
 * `docker run -d --restart=unless-stopped --name rtm-cpuminer rtm-cpuminer <worker_name> <num_threads>`
-
-
-## zil
-
-* https://shardpool.io/#start
-* https://dev.zilliqa.com/docs/miners/mining-zilminer/#cuda-driver-setup-for-nvidia-gpus-only
-* https://github.com/DurianStallSingapore/ZILMiner
-
-./zilminer -P zil://fd6a06a7cc77b03f0a8b4c3532be6041ffabc182754cb154db063e81486ad26c.worker0@eu1-zil.shardpool.io:5000/api --report-hr=1 --work-timeout=99998 --retry-delay=998 --farm-retries=99998
-
-
-
 
